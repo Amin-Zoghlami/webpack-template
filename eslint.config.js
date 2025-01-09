@@ -2,5 +2,11 @@ const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommen
 
 module.exports = [
   "eslint:recommended",            
-  eslintPluginPrettierRecommended ,
+  eslintPluginPrettierRecommended,
+   {
+    rules: {
+      "semi": "error",
+      "singleQuote": "true",
+    },
+  },
 ];
